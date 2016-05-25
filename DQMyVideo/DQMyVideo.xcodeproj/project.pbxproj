@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		47405CB21245BCAE09A8D874 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4749CA85EAD1E0227F6960D /* libPods.a */; };
+		B31D5A2A1CF3C95D00BB2337 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B31D5A291CF3C95D00BB2337 /* main.m */; };
+		B31D5A331CF3C95D00BB2337 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31D5A311CF3C95D00BB2337 /* Main.storyboard */; };
+		B31D5A351CF3C95D00BB2337 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B31D5A341CF3C95D00BB2337 /* Assets.xcassets */; };
+		B31D5A381CF3C95D00BB2337 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31D5A361CF3C95D00BB2337 /* LaunchScreen.storyboard */; };
+		B31D5A421CF48DB800BB2337 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B31D5A411CF48DB800BB2337 /* AVKit.framework */; };
+		B33586BE1CF5097F00368672 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B33586B91CF5097F00368672 /* AppDelegate.m */; };
+		B33586BF1CF5097F00368672 /* DQMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B33586BB1CF5097F00368672 /* DQMainViewController.m */; };
+		B33586C01CF5097F00368672 /* DQMyPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B33586BD1CF5097F00368672 /* DQMyPlayerViewController.m */; };
+		B33586C41CF509BA00368672 /* DQVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B33586C31CF509BA00368672 /* DQVideoViewController.m */; };
+		B33586C81CF51B8900368672 /* movie.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B33586C71CF51B8900368672 /* movie.bundle */; };
+		B3473E851CF5B90B00349DDD /* DQAVPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B3473E841CF5B90B00349DDD /* DQAVPlayer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1B6C0F8CF77B4D4A8EB31D76 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B31D5A251CF3C95D00BB2337 /* DQMyVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DQMyVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B31D5A291CF3C95D00BB2337 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B31D5A321CF3C95D00BB2337 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B31D5A341CF3C95D00BB2337 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B31D5A371CF3C95D00BB2337 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B31D5A391CF3C95D00BB2337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B31D5A411CF48DB800BB2337 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		B33586B81CF5097F00368672 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B33586B91CF5097F00368672 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B33586BA1CF5097F00368672 /* DQMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQMainViewController.h; sourceTree = "<group>"; };
+		B33586BB1CF5097F00368672 /* DQMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQMainViewController.m; sourceTree = "<group>"; };
+		B33586BC1CF5097F00368672 /* DQMyPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQMyPlayerViewController.h; sourceTree = "<group>"; };
+		B33586BD1CF5097F00368672 /* DQMyPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQMyPlayerViewController.m; sourceTree = "<group>"; };
+		B33586C21CF509BA00368672 /* DQVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQVideoViewController.h; sourceTree = "<group>"; };
+		B33586C31CF509BA00368672 /* DQVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQVideoViewController.m; sourceTree = "<group>"; };
+		B33586C71CF51B8900368672 /* movie.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = movie.bundle; sourceTree = "<group>"; };
+		B3473E831CF5B90B00349DDD /* DQAVPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQAVPlayer.h; sourceTree = "<group>"; };
+		B3473E841CF5B90B00349DDD /* DQAVPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQAVPlayer.m; sourceTree = "<group>"; };
+		B4749CA85EAD1E0227F6960D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C797EFD911421329489033C7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B31D5A221CF3C95C00BB2337 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B31D5A421CF48DB800BB2337 /* AVKit.framework in Frameworks */,
+				47405CB21245BCAE09A8D874 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0ADBF28EA7494FC39E69DBD6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C797EFD911421329489033C7 /* Pods.debug.xcconfig */,
+				1B6C0F8CF77B4D4A8EB31D76 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B251F013C91E25BF423AB24E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B31D5A411CF48DB800BB2337 /* AVKit.framework */,
+				B4749CA85EAD1E0227F6960D /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B31D5A1C1CF3C95C00BB2337 = {
+			isa = PBXGroup;
+			children = (
+				B31D5A271CF3C95D00BB2337 /* DQMyVideo */,
+				B31D5A261CF3C95D00BB2337 /* Products */,
+				0ADBF28EA7494FC39E69DBD6 /* Pods */,
+				B251F013C91E25BF423AB24E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B31D5A261CF3C95D00BB2337 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B31D5A251CF3C95D00BB2337 /* DQMyVideo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B31D5A271CF3C95D00BB2337 /* DQMyVideo */ = {
+			isa = PBXGroup;
+			children = (
+				B33586B41CF506E000368672 /* Controller */,
+				B33586B51CF506E000368672 /* Model */,
+				B33586B71CF506E000368672 /* View */,
+				B33586B61CF506E000368672 /* Resource */,
+				B31D5A311CF3C95D00BB2337 /* Main.storyboard */,
+				B31D5A341CF3C95D00BB2337 /* Assets.xcassets */,
+				B31D5A361CF3C95D00BB2337 /* LaunchScreen.storyboard */,
+				B31D5A391CF3C95D00BB2337 /* Info.plist */,
+				B31D5A281CF3C95D00BB2337 /* Supporting Files */,
+			);
+			path = DQMyVideo;
+			sourceTree = "<group>";
+		};
+		B31D5A281CF3C95D00BB2337 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B31D5A291CF3C95D00BB2337 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B33586B41CF506E000368672 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B33586B81CF5097F00368672 /* AppDelegate.h */,
+				B33586B91CF5097F00368672 /* AppDelegate.m */,
+				B33586BA1CF5097F00368672 /* DQMainViewController.h */,
+				B33586BB1CF5097F00368672 /* DQMainViewController.m */,
+				B33586C21CF509BA00368672 /* DQVideoViewController.h */,
+				B33586C31CF509BA00368672 /* DQVideoViewController.m */,
+				B33586BC1CF5097F00368672 /* DQMyPlayerViewController.h */,
+				B33586BD1CF5097F00368672 /* DQMyPlayerViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B33586B51CF506E000368672 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B33586B61CF506E000368672 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B33586C71CF51B8900368672 /* movie.bundle */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		B33586B71CF506E000368672 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B3473E831CF5B90B00349DDD /* DQAVPlayer.h */,
+				B3473E841CF5B90B00349DDD /* DQAVPlayer.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B31D5A241CF3C95C00BB2337 /* DQMyVideo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B31D5A3C1CF3C95D00BB2337 /* Build configuration list for PBXNativeTarget "DQMyVideo" */;
+			buildPhases = (
+				9C36A815B952D636546DB27B /* Check Pods Manifest.lock */,
+				B31D5A211CF3C95C00BB2337 /* Sources */,
+				B31D5A221CF3C95C00BB2337 /* Frameworks */,
+				B31D5A231CF3C95C00BB2337 /* Resources */,
+				A68FF46F025BE5DDAA12440C /* Embed Pods Frameworks */,
+				996CFFFCC9EB41451E11A228 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DQMyVideo;
+			productName = DQMyVideo;
+			productReference = B31D5A251CF3C95D00BB2337 /* DQMyVideo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B31D5A1D1CF3C95C00BB2337 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DQ;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = youdingquan;
+				TargetAttributes = {
+					B31D5A241CF3C95C00BB2337 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 22N43T8TU4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = B31D5A201CF3C95C00BB2337 /* Build configuration list for PBXProject "DQMyVideo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B31D5A1C1CF3C95C00BB2337;
+			productRefGroup = B31D5A261CF3C95D00BB2337 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B31D5A241CF3C95C00BB2337 /* DQMyVideo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B31D5A231CF3C95C00BB2337 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B33586C81CF51B8900368672 /* movie.bundle in Resources */,
+				B31D5A381CF3C95D00BB2337 /* LaunchScreen.storyboard in Resources */,
+				B31D5A351CF3C95D00BB2337 /* Assets.xcassets in Resources */,
+				B31D5A331CF3C95D00BB2337 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		996CFFFCC9EB41451E11A228 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C36A815B952D636546DB27B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A68FF46F025BE5DDAA12440C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B31D5A211CF3C95C00BB2337 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3473E851CF5B90B00349DDD /* DQAVPlayer.m in Sources */,
+				B31D5A2A1CF3C95D00BB2337 /* main.m in Sources */,
+				B33586C01CF5097F00368672 /* DQMyPlayerViewController.m in Sources */,
+				B33586C41CF509BA00368672 /* DQVideoViewController.m in Sources */,
+				B33586BF1CF5097F00368672 /* DQMainViewController.m in Sources */,
+				B33586BE1CF5097F00368672 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B31D5A311CF3C95D00BB2337 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B31D5A321CF3C95D00BB2337 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B31D5A361CF3C95D00BB2337 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B31D5A371CF3C95D00BB2337 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B31D5A3A1CF3C95D00BB2337 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B31D5A3B1CF3C95D00BB2337 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B31D5A3D1CF3C95D00BB2337 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C797EFD911421329489033C7 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: ydq19920924@icloud.com (Y7MKB6E9RY)";
+				INFOPLIST_FILE = DQMyVideo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ydq.TestGitProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "97c82b87-4fdb-464f-88f7-077ffe99ac6a";
+			};
+			name = Debug;
+		};
+		B31D5A3E1CF3C95D00BB2337 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B6C0F8CF77B4D4A8EB31D76 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: ydq19920924@icloud.com (Y7MKB6E9RY)";
+				INFOPLIST_FILE = DQMyVideo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ydq.TestGitProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "97c82b87-4fdb-464f-88f7-077ffe99ac6a";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B31D5A201CF3C95C00BB2337 /* Build configuration list for PBXProject "DQMyVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B31D5A3A1CF3C95D00BB2337 /* Debug */,
+				B31D5A3B1CF3C95D00BB2337 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B31D5A3C1CF3C95D00BB2337 /* Build configuration list for PBXNativeTarget "DQMyVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B31D5A3D1CF3C95D00BB2337 /* Debug */,
+				B31D5A3E1CF3C95D00BB2337 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B31D5A1D1CF3C95C00BB2337 /* Project object */;
+}

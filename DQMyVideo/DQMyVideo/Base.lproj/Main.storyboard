@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="S6d-jT-Iwb">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="5iU-DO-ppt">
+            <objects>
+                <tabBarController id="S6d-jT-Iwb" customClass="DQMainViewController" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="urs-uH-Bcu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="zij-2E-KTL" kind="relationship" relationship="viewControllers" id="py8-Mi-ZcV"/>
+                        <segue destination="pTv-es-u5e" kind="relationship" relationship="viewControllers" id="ypf-6R-jNl"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cnY-C2-tMg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1292" y="-506"/>
+        </scene>
+        <!--video-->
+        <scene sceneID="KkR-5t-as7">
+            <objects>
+                <viewController id="zij-2E-KTL" userLabel="video" customClass="DQVideoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="swD-5k-eS9"/>
+                        <viewControllerLayoutGuide type="bottom" id="qDL-KO-59W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c03-aD-fUx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入播放地址" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="wRA-g7-dzZ">
+                                <rect key="frame" x="11" y="398" width="348" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="WdF-NQ-8FL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCJ-0L-HsW">
+                                <rect key="frame" x="220" y="471" width="75" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ESe-hq-wrU"/>
+                                    <constraint firstAttribute="width" constant="75" id="RRG-yK-Dds"/>
+                                </constraints>
+                                <state key="normal" title="新界面播放"/>
+                                <connections>
+                                    <segue destination="bPL-w0-9Gw" kind="modal" identifier="DQMyPlayer" id="xqJ-iq-ioV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KdT-db-9FA">
+                                <rect key="frame" x="73" y="471" width="90" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4N4-I5-0oE"/>
+                                    <constraint firstAttribute="width" constant="90" id="8gJ-en-mgr"/>
+                                </constraints>
+                                <state key="normal" title="当前页面播放"/>
+                                <connections>
+                                    <action selector="currentPageClick:" destination="zij-2E-KTL" eventType="touchUpInside" id="m25-RQ-PLl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QCJ-0L-HsW" firstAttribute="centerX" secondItem="c03-aD-fUx" secondAttribute="centerX" constant="70" id="HwQ-mK-YwI"/>
+                            <constraint firstItem="qDL-KO-59W" firstAttribute="top" secondItem="wRA-g7-dzZ" secondAttribute="bottom" constant="123" id="QIz-32-iw7"/>
+                            <constraint firstItem="qDL-KO-59W" firstAttribute="top" secondItem="QCJ-0L-HsW" secondAttribute="bottom" constant="50" id="dab-2s-U2Z"/>
+                            <constraint firstItem="wRA-g7-dzZ" firstAttribute="leading" secondItem="c03-aD-fUx" secondAttribute="leadingMargin" constant="-5" id="hsH-dA-IeK"/>
+                            <constraint firstItem="KdT-db-9FA" firstAttribute="centerX" secondItem="c03-aD-fUx" secondAttribute="centerX" constant="-70" id="pQY-e3-oOn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wRA-g7-dzZ" secondAttribute="trailing" id="uNF-93-vKa"/>
+                            <constraint firstItem="qDL-KO-59W" firstAttribute="top" secondItem="KdT-db-9FA" secondAttribute="bottom" constant="50" id="zqb-UT-gEh"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="EO8-l3-8UW"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="600"/>
+                    <connections>
+                        <outlet property="urlTextField" destination="wRA-g7-dzZ" id="r8v-4c-ljC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uor-vc-IRE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-616.5" y="-832"/>
+        </scene>
+        <!--audio-->
+        <scene sceneID="z6c-SM-xch">
+            <objects>
+                <viewController id="pTv-es-u5e" userLabel="audio" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IRD-H8-hiQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZND-bC-FoF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rcP-Qd-dIs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="CcT-y0-3Vb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OWv-lj-dJm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-616" y="-102"/>
+        </scene>
+        <!--myPlayer-->
+        <scene sceneID="B6z-Ot-kCt">
+            <objects>
+                <viewController storyboardIdentifier="DQMyPlayerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bPL-w0-9Gw" userLabel="myPlayer" customClass="DQMyPlayerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IPL-gT-u4Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="BZj-FR-v5T"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hMy-Kc-eiV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sC5-cV-SFm"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="600"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SWc-aK-QW6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-33.5" y="-832"/>
+        </scene>
+    </scenes>
+</document>
